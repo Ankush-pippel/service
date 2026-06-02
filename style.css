@@ -1128,3 +1128,41 @@ footer{
 .contact-btn:hover{
     transform:translateY(-3px);
 }
+
+/* GOOGLE MAP */
+
+.map-section{
+    padding:60px 5%;
+    background:#fff;
+}
+
+.map-section h3{
+    text-align:center;
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.map-section iframe{
+    width:100%;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .map-section{
+        padding:40px 5%;
+    }
+
+    .map-section h3{
+        font-size:1.6rem;
+    }
+
+    .map-section iframe{
+        height:300px;
+    }
+}

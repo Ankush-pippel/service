@@ -1129,6 +1129,65 @@ footer{
     transform:translateY(-3px);
 }
 
+/* ==========================
+CONTACT PAGE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+        padding:30px 15px;
+        gap:20px;
+    }
+
+    .contact-info-box,
+    .contact-form{
+        width:100%;
+        padding:20px;
+    }
+
+    .contact-hero{
+        padding:40px 15px;
+    }
+
+    .contact-hero h2{
+        font-size:30px;
+    }
+
+    .contact-hero p{
+        font-size:16px;
+    }
+
+    .info-item{
+        gap:12px;
+        align-items:flex-start;
+    }
+
+    .info-item h4{
+        font-size:16px;
+    }
+
+    .info-item p{
+        font-size:14px;
+        word-break:break-word;
+    }
+
+    .contact-btn{
+        padding:14px;
+        font-size:16px;
+    }
+
+    .map-section{
+        padding:30px 15px;
+    }
+
+    .map-section iframe{
+        height:280px;
+    }
+
+}
+
 /* GOOGLE MAP */
 
 .map-section{
@@ -1165,4 +1224,311 @@ footer{
     .map-section iframe{
         height:300px;
     }
+}
+
+
+/*==========================
+ NEW SERVICE SECTION
+===========================*/
+
+.services{
+    padding:70px 5%;
+    background:#f8fbff;
+}
+
+.service-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.service-box{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.service-img{
+
+    width:100%;
+    height:220px;
+    overflow:hidden;
+
+}
+
+.service-img img{
+
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.5s;
+
+}
+
+.service-box:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.service-content{
+
+    padding:25px;
+
+}
+
+.service-content h3{
+
+    color:var(--primary);
+    margin-bottom:12px;
+    font-size:22px;
+
+}
+
+.service-content p{
+
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+
+}
+
+.service-btn{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    width:100%;
+
+    padding:13px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.service-btn:hover{
+
+    background:#1ebd59;
+
+}
+
+.service-btn i{
+
+    font-size:20px;
+
+}
+
+/*==========================
+ Responsive
+===========================*/
+
+@media(max-width:768px){
+
+.service-img{
+
+    height:200px;
+
+}
+
+.service-content{
+
+    padding:20px;
+
+}
+
+.service-content h3{
+
+    font-size:20px;
+
+}
+
+}
+/*==========================
+Premium Service Cards
+==========================*/
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.service-box{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.service-img{
+
+    width:100%;
+    height:220px;
+
+    overflow:hidden;
+
+}
+
+.service-img img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.5s;
+
+}
+
+.service-box:hover .service-img img{
+
+    transform:scale(1.08);
+
+}
+
+.service-content{
+
+    padding:25px;
+
+}
+
+.service-content h3{
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+.service-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.service-btn{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.service-btn:hover{
+
+    background:#1ebd5a;
+
+}
+
+.service-btn i{
+
+    font-size:22px;
+
+}
+
+@media(max-width:768px){
+
+.service-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.service-img{
+
+    height:200px;
+
+}
+
+.service-content{
+
+    padding:20px;
+
+}
+
+}
+
+.whatsapp-sticky-btn {
+    position: fixed;       /* बटन को स्क्रीन पर एक जगह फिक्स रखने के लिए */
+    bottom: 40px;          /* नीचे से दूरी */
+    right: 20px;           /* राइट साइड से दूरी */
+    background-color: #25D366; /* WhatsApp का सिグनेचर ग्रीन कलर */
+    color: white;          /* टेक्स्ट और आइकॉन का कलर */
+    padding: 8px 15px;     /* बटन के अंदर का स्पेस */
+    border-radius: 30px;   /* बटन को राउंड शेप देने के लिए */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* बटन के नीचे हल्की शैडो */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; /* अंडरलाइन हटाने के लिए */
+    display: flex;
+    align-items: center;
+    z-index: 9999;         /* ताकि बटन वेबसाइट के बाकी सभी एलिमेंट्स के ऊपर दिखे */
+    transition: transform 0.2s ease-in-out; /* होवर इफ़ेक्ट के लिए */
+}
+
+/* जब कोई बटन पर माउस ले जाए (Hover Effect) */
+.whatsapp-sticky-btn:hover {
+    transform: scale(1.05); /* बटन थोड़ा सा बड़ा होगा */
+    background-color: #20ba5a; /* थोड़ा गहरा हरा रंग */
+    color: white;
 }

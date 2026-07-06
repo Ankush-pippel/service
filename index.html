@@ -1,22 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS MAX SERVICES | Research • Innovation • Excellence</title>
+
+    <!-- SEO: Title optimized with location + core services -->
+    <title>PS Max Services आगरा | प्रॉपर्टी, कानूनी, स्वास्थ्य परामर्श सेवाएं</title>
+
+    <!-- SEO: Meta Description - shows up in Google search snippet -->
+    <meta name="description" content="PS Max Services आगरा में विश्वसनीय परामर्श सेवाएं प्रदान करता है — प्रॉपर्टी, कानूनी, स्वास्थ्य, शिक्षा और रोजगार सलाह। अनुभवी विशेषज्ञों से आज ही WhatsApp पर संपर्क करें।">
+
+    <!-- SEO: Keywords (low weight in ranking now, but harmless) -->
+    <meta name="keywords" content="property consultant Agra, legal advice Agra, health consultation Agra, education consultancy Agra, employment consultancy Agra, PS Max Services">
+
+    <!-- SEO: Canonical tag - prevents duplicate content confusion -->
+    <link rel="canonical" href="https://psmaxservices.in/">
+
+    <!-- SEO: Open Graph tags - controls how link looks when shared on WhatsApp/Facebook -->
+    <meta property="og:title" content="PS Max Services आगरा | प्रॉपर्टी, कानूनी, स्वास्थ्य परामर्श सेवाएं">
+    <meta property="og:description" content="आगरा में प्रॉपर्टी, कानूनी, स्वास्थ्य, शिक्षा और रोजगार से जुड़ी विश्वसनीय परामर्श सेवाएं।">
+    <meta property="og:image" content="https://psmaxservices.in/img/hero.png">
+    <meta property="og:url" content="https://psmaxservices.in/">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- SEO: LocalBusiness Schema - helps Google show rich results (address, phone, rating) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "PS Max Services",
+      "image": "https://psmaxservices.in/img/hero.png",
+      "url": "https://psmaxservices.in",
+      "telephone": "+91-9012595651",
+      "email": "psmaxservices@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Agra",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "areaServed": "Agra, Uttar Pradesh",
+      "priceRange": "$$",
+      "sameAs": []
+    }
+    </script>
 </head>
 <body>
 
     <header>
         <div class="logo-area">
-            <img src="img/ps 2.jpg" alt="Logo" class="logo-img">
+            <img src="img/ps 2.jpg" alt="PS Max Services Logo Agra" class="logo-img">
             <div class="logo-text">
-                <h1>PS MAX SERVICES</h1>
+                <!-- SEO: Changed from H1 to P - only one H1 allowed per page, and it should be the keyword-rich page heading below, not the repeated brand name -->
+                <p class="brand-name">PS MAX SERVICES</p>
                 <p>RESEARCH • INNOVATION • EXCELLENCE</p>
             </div>
         </div>
@@ -38,20 +80,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </header>
 
   <section class="about-hero">
-       <h2>आपकी हर जरूरत का एक भरोसेमंद समाधान</h2>
+       <!-- SEO: This is now the page's single H1 - includes brand + location + intent -->
+       <h1>आगरा में आपकी हर जरूरत का एक भरोसेमंद समाधान – PS Max Services</h1>
     </section>
 
     <section class="hero">
         <div class="hero-content">
             <h2>Innovative Solutions,<br><span style="color: var(--accent);">Better Life.</span></h2>
-            <p>PS Max Services provides innovative products and services through research and innovation for a better and healthier future.</p>
+            <p>PS Max Services आगरा में प्रॉपर्टी, कानूनी, स्वास्थ्य, शिक्षा और रोजगार से जुड़ी परामर्श सेवाएं अनुभवी विशेषज्ञों के साथ प्रदान करता है।</p>
             <div class="hero-btns">
                 <a href="product.html" class="btn btn-outline">Explore Products</a>
                 <a href="service.html" class="btn btn-outline">Explore Services</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="img/hero.png" alt="Scientific Research">
+            <img src="img/hero.png" alt="PS Max Services आगरा - परामर्श सेवाएं">
         </div>
     </section>
 
@@ -80,159 +123,70 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <section class="stats-bar">
         <div class="stat-item"><h3>2+</h3><p>Years of Experience</p></div>
-        <div class="stat-item"><h3>00</h3><p>Research Projects coming soon</p></div>
         <div class="stat-item"><h3>10+</h3><p>Happy Customers</p></div>
-        <div class="stat-item"><h3>1</h3><p>Countries Served in india</p></div>
+        <div class="stat-item"><h3>6+</h3><p>Services Offered</p></div>
+        <div class="stat-item"><h3>1</h3><p>City Served - Agra</p></div>
     </section>
 
-
+    <!--
+      SEO NOTE: This section was previously a FULL duplicate of service.html content
+      (same 6 long paragraphs). That creates "duplicate content" across two pages,
+      which dilutes ranking for both. Below is now a SHORT teaser with a link to
+      the full service.html page, where the complete keyword-rich content lives.
+    -->
     <section class="services">
-    <h2 class="section-title">OUR SERVICES</h2>
+    <h2 class="section-title">हमारी सेवाएं (OUR SERVICES)</h2>
 
     <div class="service-grid">
 
-        <!-- Card 1 -->
         <div class="service-box">
-
             <div class="service-img">
-                <img src="img/health.jpeg" alt="Service">
+                <img src="img/health.jpeg" alt="स्वास्थ्य संबंधी परामर्श सेवा आगरा - Health Consultation Agra">
             </div>
-
             <div class="service-content">
                 <h3>स्वास्थ्य संबंधी परामर्श</h3>
-
-                <p>
-                    बेहतर स्वास्थ्य ही सबसे बड़ी पूंजी है। हमारे अनुभवी विशेषज्ञों से अपनी शारीरिक समस्याओं, डाइट प्लान और लाइफस्टाइल में सुधार के लिए सही व सटीक स्वास्थ्य परामर्श पाएं।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
+                <p>अनुभवी विशेषज्ञों से डाइट, लाइफस्टाइल और स्वास्थ्य समस्याओं पर सही सलाह पाएं।</p>
+                <a href="service.html#health" class="service-btn">पूरी जानकारी देखें</a>
             </div>
-
         </div>
 
-        <!-- Card 2 -->
-
         <div class="service-box">
-
             <div class="service-img">
-                <img src="img/law.jpeg" alt="">
+                <img src="img/law.jpeg" alt="कानूनी परामर्श सेवा आगरा - Legal Consultation Agra">
             </div>
-
             <div class="service-content">
-
                 <h3>कानून संबंधी परामर्श</h3>
-
-                <p>
-                    किसी भी प्रकार के कानूनी मामलों, दस्तावेजीकरण (Documentation), जमीन-जायदाद के विवादों या बिजनेस एग्रीमेंट्स के लिए हमारे एक्सपर्ट वकीलों से सुरक्षित और सही कानूनी सलाह लें।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
+                <p>कानूनी मामलों, दस्तावेजीकरण और जमीन-जायदाद विवादों के लिए एक्सपर्ट सलाह।</p>
+                <a href="service.html#legal" class="service-btn">पूरी जानकारी देखें</a>
             </div>
-
         </div>
 
-        <!-- Card 3 -->
-
         <div class="service-box">
-
             <div class="service-img">
-                <img src="img/eduction.jpeg" alt="">
+                <img src="img/eduction.jpeg" alt="शिक्षा परामर्श सेवा आगरा - Education Consultation Agra">
             </div>
-
             <div class="service-content">
-
                 <h3>शिक्षा संबंधी परामर्श</h3>
-
-                <p>
-                   बच्चों के उज्ज्वल भविष्य और सही करियर का चुनाव करने के लिए विशेषज्ञ गाइडेंस। हम छात्रों को उनकी रुचि के अनुसार सही कोर्स, कॉलेज और स्कॉलरशिप चुनने में मदद करते हैं।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
+                <p>बच्चों के सही करियर, कोर्स और कॉलेज चुनाव के लिए विशेषज्ञ गाइडेंस।</p>
+                <a href="service.html#education" class="service-btn">पूरी जानकारी देखें</a>
             </div>
-
         </div>
-
-        <!-- Card 4 -->
 
         <div class="service-box">
-
             <div class="service-img">
-                <img src="img/emplobility-2.jpeg" alt="">
+                <img src="img/emplobility-2.jpeg" alt="रोजगार परामर्श सेवा आगरा - Employment Consultation Agra">
             </div>
-
             <div class="service-content">
-
                 <h3>रोजगार संबंधी परामर्श</h3>
-
-                <p>
-                    यदि आप नौकरी की तलाश में हैं या अपने करियर को नई दिशा देना चाहते हैं, तो हमारे विशेषज्ञ आपको सही जॉब वैकेंसी, इंटरव्यू की तैयारी और सही स्किल्स सीखने में पूरी मदद करेंगे।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
+                <p>सही जॉब वैकेंसी, इंटरव्यू तैयारी और स्किल गाइडेंस के लिए मदद।</p>
+                <a href="service.html#employment" class="service-btn">पूरी जानकारी देखें</a>
             </div>
-
         </div>
 
-                <div class="service-box">
+    </div>
 
-            <div class="service-img">
-                <img src="img/personality.png" alt="Service">
-            </div>
-
-            <div class="service-content">
-                <h3>व्यक्तिगत विकास संबंधी परामर्श</h3>
-
-                <p>
-                   अपने आत्मविश्वास को बढ़ाएं, कम्युनिकेशन स्किल्स सुधारें और जीवन में सफलता पाने के लिए खुद को तैयार करें। हमारे पर्सनल डेवलपमेंट सेशन से अपनी छिपी प्रतिभा को बाहर लाएं।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
-            </div>
-
-        </div>
-
-                <div class="service-box">
-
-            <div class="service-img">
-                <img src="img/domesic voilance.jpeg" alt="Service">
-            </div>
-
-            <div class="service-content">
-                <h3>घरेलू हिंसा संबंधी परामर्श</h3>
-
-                <p>
-                   घरेलू कलह या किसी भी प्रकार के मानसिक व शारीरिक उत्पीड़न के खिलाफ सुरक्षित और गोपनीय परामर्श। हम आपको कानूनी अधिकारों की जानकारी और सामाजिक व मानसिक संबल प्रदान करते हैं।
-                </p>
-
-                <a href="https://wa.me/919012595651" class="service-btn" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk to Expert
-                </a>
-
-            </div>
-
-        </div>
-
+    <div style="text-align:center; margin-top: 30px;">
+        <a href="service.html" class="btn btn-outline">सभी सेवाएं देखें (View All Services)</a>
     </div>
 </section>
 
@@ -241,7 +195,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="prod-card">
         <div class="product-image">
-            <img src="img/skin1.jpeg" alt="PS Max skin care">
+            <img src="img/skin1.jpeg" alt="PS Max Skin Care Product - Coming Soon">
         </div>
         <h4>PS Max skin Care</h4>
         <button class="add-cart">
@@ -252,7 +206,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="prod-card">
         <div class="product-image">
-            <img src="img/ps herbal Care.jpeg" alt="harbal care">
+            <img src="img/ps herbal Care.jpeg" alt="PS Max Herbal Care Product - Coming Soon">
         </div>
         <h4>Harble care</h4>
         <button class="add-cart">
@@ -263,7 +217,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="prod-card">
         <div class="product-image">
-            <img src="img/ps dryfruits.jpeg" alt="dry fruits">
+            <img src="img/ps dryfruits.jpeg" alt="PS Max Dry Fruits Product - Coming Soon">
         </div>
         <h4>Dry fruits</h4>
         <button class="add-cart">
@@ -274,7 +228,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="prod-card">
         <div class="product-image">
-            <img src="img/ps cloths.jpeg" alt="clothes">
+            <img src="img/ps cloths.jpeg" alt="PS Max Clothes Product - Coming Soon">
         </div>
         <h4>Clothes</h4>
         <button class="add-cart">
@@ -285,18 +239,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 </section>
 
-
-
     <footer style="background: var(--primary); color: white; padding: 60px 5% 20px; margin-top: 50px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
             <div>
                 <h3>PS MAX SERVICES</h3>
-                <p style="opacity: 0.7; margin-top: 15px;">Changing thinking, Changing life. We deliver excellence in every product.</p>
+                <p style="opacity: 0.7; margin-top: 15px;">Changing thinking, Changing life. आगरा में विश्वसनीय परामर्श सेवाएं।</p>
             </div>
             <div>
                 <h4>Contact Us</h4>
                 <p style="opacity: 0.7; margin-top: 15px;">📞 +91 90125 95651</p>
                 <p style="opacity: 0.7;">✉️ psmaxservices@gmail.com</p>
+                <p style="opacity: 0.7;">📍 Agra, Uttar Pradesh</p>
             </div>
             <div>
                 <h4>Follow Us</h4>
@@ -314,8 +267,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <!-- Floating WhatsApp Button -->
 <a href="https://wa.me/919012595851?text=नमस्ते,%20मुझे%20सहायता%20चाहिए।" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer">
-    <!-- WhatsApp Icon (FontAwesome या SVG) -->
-    <svg xmlns="http://www.w3.org/2000/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 5px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 5px;">
         <path d="M13.601 2.326A7.85 7.85 0 0 0 10.22 1.15c-4.322 0-7.838 3.513-7.84 7.835a7.8 7.8 0 0 0 1.062 3.972L1.35 17.5l4.735-1.24c1.218.665 2.583 1.019 3.972 1.022h.005c4.322 0 7.84-3.512 7.842-7.835a7.8 7.8 0 0 0-2.304-5.531M10.22 15.112a6.5 6.5 0 0 1-3.321-.913l-.238-.141-2.472.648.66-2.41-.155-.247a6.47 6.47 0 0 1-1.002-3.41c.002-3.57 2.9-6.46 6.472-6.46a6.47 6.47 0 0 1 4.568 1.9 6.48 6.48 0 0 1 1.9 4.582c0 3.57-2.9 6.46-6.47 6.46m3.608-4.914c-.198-.098-1.173-.578-1.353-.643-.18-.065-.31-.099-.441.099-.13.197-.5.63-.614.757-.115.127-.23.141-.428.041s-.838-.309-1.597-.985c-.59-.525-.987-1.175-1.103-1.372-.115-.198-.013-.304.087-.403.09-.089.198-.232.296-.347.1-.114.133-.193.198-.321.065-.128.033-.242-.017-.341-.05-.099-.441-1.063-.604-1.455-.159-.384-.32-.33-.442-.336l-.377-.007c-.13 0-.343.049-.523.247-.18.197-.69.673-.69 1.64s.703 1.905.802 2.034c.101.13 1.385 2.115 3.356 2.964.469.203.835.324 1.12.415.47.15 1.001.129 1.381.072.424-.062 1.173-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
     </svg>
     <span>चैट करें</span>

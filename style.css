@@ -182,14 +182,6 @@ header{
     height:50px;
     object-fit:contain;
 }
-
-.logo-text h1{
-    font-size:1.15rem;
-    color:var(--primary);
-    line-height:1;
-    font-weight:800;
-}
-
 .logo-text p{
     font-size:.55rem;
     color:var(--accent);
@@ -832,14 +824,6 @@ footer{
     box-shadow:0 10px 25px rgba(0,0,0,.05);
 }
 
-.cta-box{
-    margin:60px 5%;
-    padding:50px;
-    border-radius:20px;
-    background:var(--gradient);
-    color:white;
-    text-align:center;
-}
 .wa-btn i{
     font-size:30px !important;
 }
@@ -920,11 +904,6 @@ footer{
     padding:60px 5%;
 }
 
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
 
 .service-card{
     background:white;
@@ -1230,29 +1209,6 @@ CONTACT PAGE RESPONSIVE
 /*==========================
  NEW SERVICE SECTION
 ===========================*/
-
-.services{
-    padding:70px 5%;
-    background:#f8fbff;
-}
-
-.service-grid{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-
-}
-
-.service-box{
-
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.35s;
-
-}
 
 .service-box:hover{
 
